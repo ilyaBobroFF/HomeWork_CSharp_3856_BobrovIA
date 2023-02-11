@@ -17,8 +17,10 @@
 { // Выполнение задачи №2
     Console.WriteLine();
     int[] Numbers = GetArrayRandNum(8, -100, 100, "Задачи №2"); 
-    int countOdd = CounterEvenOdd(Numbers, "Odd");
-    Console.WriteLine("Количество нечетных элементов в массиве = "+ countOdd);
+    int countOdd = CounterEvenOdd(Numbers, "Odd"); // В условии не было. Но решил оставить.
+    int sumOdd = SumOdd(Numbers); // Сначала не верно понял условие задачи. Переделал.
+    Console.WriteLine("Количество нечетных элементов в массиве = "+ countOdd); 
+    Console.WriteLine("Сумма нечетных элементов в массиве = " + sumOdd); 
     Console.WriteLine();
     Console.WriteLine();
 }
@@ -57,6 +59,16 @@ int CounterEvenOdd(int[] Arr, string evenOrOdd) // Метод для подсч�
         if (num % 2 != 0 && evenOrOdd == "Odd") count++;
     }
     return count;
+}
+
+int SumOdd(int[] Arr) // Метод для суммы нечетных элементов
+{   
+    int sum = 0;
+    foreach(int num in Arr)
+    {
+        if (num % 2 != 0) sum += num;
+    }
+    return sum;
 }
 
 double[] GetArrayModificy(int size, int minEl, int maxEl, string task) // Метод для получения массива из случайных чисел (изменен для получения вещественных чисел)
