@@ -4,14 +4,14 @@
     // 2, 4 -> 16
 
     Console.Write("Введите число для возведения в степеть (задача №1): ");
-    int numA = int.Parse(Console.ReadLine());
+    int numA = Convert.ToInt32(Console.ReadLine());
 
     Console.Write(" C показателем второго числа. Введите второе число (задача №1): ");
-    int numB = int.Parse(Console.ReadLine());
+    int numB = Convert.ToInt32(Console.ReadLine());
     if (numB < 0)
     {
         numB *= -1;
-        Console.WriteLine("Внимание! Изменен знак показателя степени с - на +");
+        Console.WriteLine("Внимание! Изменен знак показателя степени c - на +");
     }
 
     int DegreeGet (int num1, int num2)

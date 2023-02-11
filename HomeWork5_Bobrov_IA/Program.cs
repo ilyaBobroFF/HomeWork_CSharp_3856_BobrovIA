@@ -87,23 +87,23 @@ double DiffMaxMin(double[] Arr) // Метод вычисления разниц�
     return max;
 }
 
-double[] GetArrayUser(string task) // Метод для получения массива при задании пользователем
-{
-    Console.Write($"Введите длину массива для {task}: ");
-    int size = Convert.ToInt32(Console.ReadLine());
-    while (size <= 1)
-        {
-            Console.Write("Не верно указана длина массива. Повторите ввод: ");
-            size = Convert.ToInt32(Console.ReadLine());
-        } 
+// double[] GetArrayUser(string task) // Метод для получения массива при задании пользователем
+// {
+//     Console.Write($"Введите длину массива для {task}: ");
+//     int size = Convert.ToInt32(Console.ReadLine());
+//     while (size <= 1)
+//         {
+//             Console.Write("He верно указана длина массива. Повторите ввод: ");
+//             size = Convert.ToInt32(Console.ReadLine());
+//         } 
     
-    double[] Arr = new double [size];
-    for (int i = 0; i < size; i++)
-    {
-        Console.Write($"Введите элемент массива используя (,) с индексом {i}: ");
-        Arr [i] = Convert.ToDouble(Console.ReadLine());
-    }
-    Console.WriteLine($"Получили массив из {size} элементов для {task}");
-    return Arr;
-}
+//     double[] Arr = new double [size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         Console.Write($"Введите элемент массива используя (,) c индексом {i}: ");
+//         Arr [i] = Convert.ToDouble(Console.ReadLine());
+//     }
+//     Console.WriteLine($"Получили массив из {size} элементов для {task}");
+//     return Arr;
+// }
     
